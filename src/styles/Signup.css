@@ -1,0 +1,182 @@
+/* General Form Styling for both Login and Signup */
+.form-container {
+	background-color: white;
+	padding: 50px;
+	border-radius: 12px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	width: 400px;
+	max-width: 90%;
+	margin: auto;
+  }
+  
+  .form-title {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 28px;
+	font-weight: bold;
+	color: #34495e;
+  }
+  
+  .form-group {
+	margin-bottom: 20px;
+  }
+  
+  .form-group label {
+	display: block;
+	margin-bottom: 8px;
+	font-size: 16px;
+	color: #2c3e50;
+  }
+  
+  .form-group input {
+	width: 100%;
+	padding: 12px;
+	margin-left: -15px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	font-size: 16px;
+	transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus {
+	border-color: #1abc9c;
+	outline: none;
+  }
+  
+  .btn {
+	width: 100%;
+	padding: 12px;
+	background-color: #1abc9c;
+	border: none;
+	border-radius: 8px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+	background-color: #16a085;
+	transform: translateY(-2px);
+  }
+  
+  .additional-links {
+	text-align: center;
+	margin-top: 20px;
+  }
+  
+  .additional-links a {
+	text-decoration: none;
+	color: #1abc9c;
+	font-weight: 500;
+  }
+  
+  .additional-links a:hover {
+	text-decoration: underline;
+	color: #16a085;
+  }
+  
+  /* OR Divider */
+.or-divider {
+	text-align: center;
+	color: #7f8c8d;
+	font-size: 14px;
+	margin: 20px 0;
+	position: relative;
+  }
+  
+  .or-divider::before,
+  .or-divider::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: 40%;
+	height: 1px;
+	background: #ddd;
+  }
+  
+  .or-divider::before {
+	left: 0;
+  }
+  
+  .or-divider::after {
+	right: 0;
+  }
+
+/* Google Button with Light Background */
+.google-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px;
+	background-color: #ffffff; /* White background */
+	border: 1px solid #dcdcdc; /* Light gray border */
+	border-radius: 8px;
+	font-size: 16px;
+	color: #444; /* Dark text for better contrast */
+	cursor: pointer;
+	gap: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+	transition: all 0.3s ease;
+	width: 100%;
+  }
+  
+  .google-btn img {
+	width: 24px; /* Increased logo size */
+	height: 24px; /* Keep it proportional */
+	margin-right: 10px; /* More space between logo and text */
+  }
+  
+  .google-btn:hover {
+	background-color: #f5f5f5; /* Slightly darker on hover */
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+	transform: translateY(-2px);
+  }
+
+  /* Additional links styling */
+  .additional-links {
+	margin-top: 20px;
+	text-align: center;
+  }
+  
+  .additional-links a {
+	color: #3498db;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 0 10px;
+  }
+  
+  .additional-links a:hover {
+	text-decoration: underline;
+  }
+  
+  /* Form group label */
+  .form-group label {
+	font-size: 14px;
+	color: #7f8c8d;
+	margin-bottom: 5px;
+	display: block;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	  transform: translateY(30px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+
+  .error-message {
+	color: red; /* Change to the color you want */
+	text-align: center; /* Center the error message */
+	margin-top: 20px; /* Add some space above */
+	font-size: 16px; /* Adjust font size */
+	animation: fadeIn 0.5s ease; /* Optional: Add a fade-in effect */
+  }
+  
+  
